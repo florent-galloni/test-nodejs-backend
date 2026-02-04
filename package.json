@@ -1,0 +1,16 @@
+{
+  "name": "backend-test",
+  "version": "1.0.0",
+  "description": "a short test to evaluate the candidates understanding of Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "serve": "node server.js "
+  },
+  "author": "Florent BEAUCHAMP",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "type": "module"
+}
