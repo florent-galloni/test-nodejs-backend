@@ -25,3 +25,8 @@ After a maximum of one hour, you must have published your solution in a github r
 
 Happy coding
 
+
+for run the script 
+    0 init the new dependencies npm install 
+    1 run the server first with: npm run serve 
+    2 run the script on other terminal with: npm run query 
