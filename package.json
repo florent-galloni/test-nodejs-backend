@@ -5,12 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "serve": "node server.js "
+    "serve": "node server.js ",
+    "query": "tsx script/query-data.ts",
+    "test:query": "tsx --test script/query-data.test.ts",
+    "build": "tsc"
   },
   "author": "Florent BEAUCHAMP",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
     "express": "^4.21.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
 }
