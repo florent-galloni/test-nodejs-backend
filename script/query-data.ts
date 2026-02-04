@@ -145,9 +145,9 @@ async function main(): Promise<void> {
   console.log('='.repeat(60));
 }
 
-
-// Exécution du script - Ne s'exécute PAS pendant les tests
-if (process.argv[1]?.endsWith('query-data.ts') && !process.argv[1]?.includes('test')) {
+// Exécution du script
+if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, '/')}`|| 
+    process.argv[1].endsWith('query-data.ts')) {
   main().catch((error) => {
     console.error('❌ Erreur fatale:', error);
     process.exit(1);
